@@ -1,6 +1,6 @@
 pipeline{
 
-agent slave;
+agent slave
 
 stages{
 stage('Clone And Build Project'){
