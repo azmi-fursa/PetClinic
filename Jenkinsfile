@@ -6,7 +6,9 @@ stages{
 stage('Clone And Build Project'){
 steps{
 sh 'cd spring-petclinic'
-sh 'mvn package'
+script{
+	"./mvnw package"
+}
 }
 }
 }
