@@ -5,7 +5,7 @@ agent any;
 stages{
 stage('Clone And Build Project'){
 steps{
-rm -rf *
+sh 'rm -rf https://github.com/spring-projects/spring-petclinic.git' 
 sh 'git clone https://github.com/spring-projects/spring-petclinic.git'
 sh 'cd spring-petclinic'
 sh './mvnw package'
